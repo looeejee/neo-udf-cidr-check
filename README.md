@@ -33,3 +33,7 @@ MATCH (s:Server)
 WHERE s.name CONTAINS 'web-server'
 RETURN s.ip, example.ipBelongsToNetwork(s.ip, '10.10.0.0/16') AS belongsToNetwork
 ```
+
+OUTPUT:
+
+![Use UDF to check if IP address belongs to a Network](img/match_servers_table.png)"

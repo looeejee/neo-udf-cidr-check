@@ -36,4 +36,4 @@ RETURN s.ip, example.ipBelongsToNetwork(s.ip, '10.10.0.0/16') AS belongsToNetwor
 
 OUTPUT:
 
-![Use UDF to check if IP address belongs to a Network](img/match_servers_table.png)"
+![Use UDF to check if IP address belongs to a Network](img/check_ipv4_address.png)"

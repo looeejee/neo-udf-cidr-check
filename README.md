@@ -26,7 +26,9 @@ To view the IP addresses stored in your nodes, you can execute a query that disp
 
 To utilize the UDF, perform a query to filter nodes based on a specific condition (e.g., matching labels and names) and then check if the associated IP address belongs to a specified network segment.
 
-For example, to find all nodes with the label `:Server` that contain `web-server` in their `name` property and verify if their `ip` addresses belong to the network `10.10.0.0/16`, you would execute the following query:
+### EXAMPLE-1:
+
+To find all nodes with the label `:Server` that contain `web-server` in their `name` property and verify if their `ip` addresses belong to the network `10.10.0.0/16`, you would execute the following query:
 
 ```cypher
 MATCH (s:Server)
@@ -34,11 +36,15 @@ WHERE s.name CONTAINS 'web-server'
 RETURN s.ip, example.ipBelongsToNetwork(s.ip, '10.10.0.0/16') AS belongsToNetwork
 ```
 
-### EXAMPLE-1:
-
 ![Use UDF to check if IP address belongs to a Network](img/check_ipv4_address.png)
 
 ### EXAMPLE-2:
+
+Filter nodes based on whether the value of the node property IP belongs to the specified network
+
+```cypher
+MATCH (s:Server) WHERE example.ipBelongsToNetwork(s.ip, '192.168.10.0/28') RETURN s
+```
 
 ![Filter Nodes if value of node property IP belongs to a Network - 1](img/filter_nodes_by_ip.png)
 

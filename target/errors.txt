@@ -1,0 +1,37 @@
+[ERROR]   NetworkUtilsTest.testIPv6Address:197 
+Expecting throwable message:
+  "Cannot coerce NULL to Java boolean"
+to contain:
+  "Invalid IP or network format"
+but did not.
+
+[ERROR] Failures: 
+[ERROR]   NetworkUtilsTest.testHostnameInsteadOfIp:207 
+Expecting throwable message:
+  "Cannot coerce NULL to Java boolean"
+to contain:
+  "Invalid IP or network format"
+but did not.
+
+[ERROR] example.NetworkUtilsTest.testIpBelongsToNetwork(String, String, boolean)[9] -- Time elapsed: 0.228 s <<< ERROR!
+org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid network format.
+
+Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid network format..
+
+[ERROR] example.NetworkUtilsTest.testHostnameInsteadOfIp -- Time elapsed: 0.228 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting throwable message:
+  "Cannot coerce NULL to Java boolean"
+to contain:
+  "Invalid IP or network format"
+but did not.
+
+[ERROR] example.NetworkUtilsTest.testIPv6Address -- Time elapsed: 0.276 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting throwable message:
+  "Cannot coerce NULL to Java boolean"
+to contain:
+  "Invalid IP or network format"
+but did not.

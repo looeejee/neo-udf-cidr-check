@@ -1,0 +1,20 @@
+the mvn clean build is throwing "Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.0.256: nodename nor servname provided, or not known" and "ERROR] example.NetworkUtilsTest.testInvalidIp(String, String)[4] -- Time elapsed: 0.009 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:93)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.-1.1: nodename nor servname provided, or not known" and "Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testNullNetwork(NetworkUtilsTest.java:145)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty." and "Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid network format." and "        Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length.." and "[ERROR] example.NetworkUtilsTest.testInvalidNetwork(String, String)[3] -- Time elapsed: 0.007 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length." and "
+Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: For input string: "abc"" and "Expecting code to raise a throwable.
+        at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+        Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999"and "Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid network format.."and "Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty.."

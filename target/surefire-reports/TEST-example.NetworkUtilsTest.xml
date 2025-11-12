@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="example.NetworkUtilsTest" time="22.655" tests="29" errors="1" skipped="0" failures="13">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="example.NetworkUtilsTest" time="19.847" tests="31" errors="1" skipped="0" failures="15">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Users/luigi/.sdkman/candidates/java/21.0.6-amzn/lib"/>
-    <property name="sun.java.command" value="/Users/luigi/Code/neo-udf-cidr-check/target/surefire/surefirebooter-20251112094317243_3.jar /Users/luigi/Code/neo-udf-cidr-check/target/surefire 2025-11-12T09-43-17_211-jvmRun1 surefire-20251112094317243_1tmp surefire_0-20251112094317243_2tmp"/>
+    <property name="sun.java.command" value="/Users/luigi/Code/neo-udf-cidr-check/target/surefire/surefirebooter-20251112110538137_3.jar /Users/luigi/Code/neo-udf-cidr-check/target/surefire 2025-11-12T11-05-38_103-jvmRun1 surefire-20251112110538137_1tmp surefire_0-20251112110538137_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/luigi/Code/neo-udf-cidr-check/target/test-classes:/Users/luigi/Code/neo-udf-cidr-check/target/classes:/Users/luigi/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.1/junit-jupiter-6.0.1.jar:/Users/luigi/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.1/junit-jupiter-api-6.0.1.jar:/Users/luigi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/luigi/.m2/repository/org/junit/platform/junit-platform-commons/6.0.1/junit-platform-commons-6.0.1.jar:/Users/luigi/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.1/junit-jupiter-params-6.0.1.jar:/Users/luigi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.1/junit-jupiter-engine-6.0.1.jar:/Users/luigi/.m2/repository/org/junit/platform/junit-platform-launcher/6.0.1/junit-platform-launcher-6.0.1.jar:/Users/luigi/.m2/repository/org/junit/platform/junit-platform-engine/6.0.1/junit-platform-engine-6.0.1.jar:/Users/luigi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/luigi/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/luigi/.m2/repository/org/neo4j/test/neo4j-harness/2025.09.0/neo4j-harness-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/annotations/2025.09.0/annotations-2025.09.0.jar:/Users/luigi/.m2/repository/org/eclipse/collections/eclipse-collections/11.1.0/eclipse-collections-11.1.0.jar:/Users/luigi/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/luigi/.m2/repository/org/neo4j/test-utils/2025.09.0/test-utils-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-common/2025.09.0/neo4j-common-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-io/2025.09.0/neo4j-io-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-graphdb-api/2025.09.0/neo4j-graphdb-api-2025.09.0.jar:/Users/luigi/.m2/repository/org/ow2/asm/asm/9.8/asm-9.8.jar:/Users/luigi/.m2/repository/org/junit/platform/junit-platform-testkit/1.13.4/junit-platform-testkit-1.13.4.jar:/Users/luigi/.m2/repository/org/mockito/mockito-core/5.18.0/mockito-core-5.18.0.jar:/Users/luigi/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar:/Users/luigi/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/luigi/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81.jar:/Users/luigi/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.81/bcutil-jdk18on-1.81.jar:/Users/luigi/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.jar:/Users/luigi/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/luigi/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/luigi/.m2/repository/io/netty/netty-common/4.2.5.Final/netty-common-4.2.5.Final.jar:/Users/luigi/.m2/repository/org/neo4j/io-test-utils/2025.09.0/io-test-utils-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-random-values/2025.09.0/neo4j-random-values-2025.09.0.jar:/Users/luigi/.m2/repository/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar:/Users/luigi/.m2/repository/org/neo4j/app/neo4j-server-test-utils/2025.09.0/neo4j-server-test-utils-2025.09.0.jar:/Users/luigi/.m2/repository/commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-kernel/2025.09.0/neo4j-kernel-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-native/2025.09.0/neo4j-native-2025.09.0.jar:/Users/luigi/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-import-api/2025.09.0/neo4j-import-api-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-kernel-api/2025.09.0/neo4j-kernel-api-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-storage-engine-util/2025.09.0/neo4j-storage-engine-util-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-values/2025.09.0/neo4j-values-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-logging/2025.09.0/neo4j-logging-2025.09.0.jar:/Users/luigi/.m2/repository/org/codehaus/jettison/jettison/1.5.4/jettison-1.5.4.jar:/Users/luigi/.m2/repository/org/apache/logging/log4j/log4j-layout-template-json/2.24.3/log4j-layout-template-json-2.24.3.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-configuration/2025.09.0/neo4j-configuration-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-layout/2025.09.0/neo4j-layout-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-index/2025.09.0/neo4j-index-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-spatial-index/2025.09.0/neo4j-spatial-index-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-id-generator/2025.09.0/neo4j-id-generator-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-wal/2025.09.0/neo4j-wal-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-import-util/2025.09.0/neo4j-import-util-2025.09.0.jar:/Users/luigi/.m2/repository/blue/strategic/parquet/parquet-floor/1.58/parquet-floor-1.58.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-column/1.15.2/parquet-column-1.15.2.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-common/1.15.2/parquet-common-1.15.2.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-encoding/1.15.2/parquet-encoding-1.15.2.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-hadoop/1.15.2/parquet-hadoop-1.15.2.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-format-structures/1.15.2/parquet-format-structures-1.15.2.jar:/Users/luigi/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/luigi/.m2/repository/org/apache/parquet/parquet-jackson/1.15.2/parquet-jackson-1.15.2.jar:/Users/luigi/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.7/snappy-java-1.1.10.7.jar:/Users/luigi/.m2/repository/io/airlift/aircompressor/2.0.2/aircompressor-2.0.2.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cloud/2025.09.0/neo4j-cloud-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-exceptions/2025.09.0/neo4j-exceptions-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-concurrent/2025.09.0/neo4j-concurrent-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-csv/2025.09.0/neo4j-csv-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-diagnostics/2025.09.0/neo4j-diagnostics-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-gql-status/2025.09.0/neo4j-gql-status-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-lock/2025.09.0/neo4j-lock-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-monitoring/2025.09.0/neo4j-monitoring-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-resource/2025.09.0/neo4j-resource-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-schema/2025.09.0/neo4j-schema-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-token-api/2025.09.0/neo4j-token-api-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-unsafe/2025.09.0/neo4j-unsafe-2025.09.0.jar:/Users/luigi/.m2/repository/com/github/seancfoley/ipaddress/5.5.1/ipaddress-5.5.1.jar:/Users/luigi/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/luigi/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/luigi/.m2/repository/org/eclipse/collections/eclipse-collections-api/11.1.0/eclipse-collections-api-11.1.0.jar:/Users/luigi/.m2/repository/org/jctools/jctools-core/4.0.5/jctools-core-4.0.5.jar:/Users/luigi/.m2/repository/org/junit/vintage/junit-vintage-engine/5.13.4/junit-vintage-engine-5.13.4.jar:/Users/luigi/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/luigi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j/2025.09.0/neo4j-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-fabric/2025.09.0/neo4j-fabric-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-front-end/2025.09.0/neo4j-front-end-2025.09.0.jar:/Users/luigi/.m2/repository/io/netty/netty-buffer/4.2.5.Final/netty-buffer-4.2.5.Final.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-ast/2025.09.0/neo4j-ast-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-cache/2025.09.0/neo4j-cypher-cache-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-config/2025.09.0/neo4j-cypher-config-2025.09.0.jar:/Users/luigi/.m2/repository/com/softwaremill/magnolia1_2/magnolia_2.13/1.1.8/magnolia_2.13-1.1.8.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-expression-evaluator/2025.09.0/neo4j-cypher-expression-evaluator-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-planner/2025.09.0/neo4j-cypher-planner-2025.09.0.jar:/Users/luigi/.m2/repository/org/scala-lang/modules/scala-collection-contrib_2.13/0.3.0/scala-collection-contrib_2.13-0.3.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v5-antlr-parser/2025.09.0/cypher-v5-antlr-parser-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v25-antlr-parser/2025.09.0/cypher-v25-antlr-parser-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-runtime-util/2025.09.0/neo4j-cypher-runtime-util-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-macros/2025.09.0/neo4j-cypher-macros-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-expressions/2025.09.0/neo4j-expressions-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-notifications/2025.09.0/neo4j-notifications-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-util/2025.09.0/neo4j-util-2025.09.0.jar:/Users/luigi/.m2/repository/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar:/Users/luigi/.m2/repository/org/scala-lang/scala-reflect/2.13.16/scala-reflect-2.13.16.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-query-router/2025.09.0/neo4j-query-router-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-rendering/2025.09.0/neo4j-cypher-rendering-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-rewriting/2025.09.0/neo4j-rewriting-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-procedure/2025.09.0/neo4j-procedure-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-codegen/2025.09.0/neo4j-codegen-2025.09.0.jar:/Users/luigi/.m2/repository/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar:/Users/luigi/.m2/repository/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar:/Users/luigi/.m2/repository/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-ssl/2025.09.0/neo4j-ssl-2025.09.0.jar:/Users/luigi/.m2/repository/io/netty/netty-handler/4.2.5.Final/netty-handler-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-resolver/4.2.5.Final/netty-resolver-4.2.5.Final.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-lucene-index/2025.09.0/neo4j-lucene-index-2025.09.0.jar:/Users/luigi/.m2/repository/org/apache/lucene/lucene-analysis-common/10.2.2/lucene-analysis-common-10.2.2.jar:/Users/luigi/.m2/repository/org/apache/lucene/lucene-core/10.2.2/lucene-core-10.2.2.jar:/Users/luigi/.m2/repository/org/apache/lucene/lucene-queryparser/10.2.2/lucene-queryparser-10.2.2.jar:/Users/luigi/.m2/repository/org/apache/lucene/lucene-backward-codecs/10.2.2/lucene-backward-codecs-10.2.2.jar:/Users/luigi/.m2/repository/org/neo4j/lucene9-shaded/2025.09.0/lucene9-shaded-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-graph-algo/2025.09.0/neo4j-graph-algo-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-data-collector/2025.09.0/neo4j-data-collector-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher/2025.09.0/neo4j-cypher-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-ir/2025.09.0/neo4j-cypher-ir-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-logical-plans/2025.09.0/neo4j-cypher-logical-plans-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-physical-planning/2025.09.0/neo4j-cypher-physical-planning-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-antlr-ast-common/2025.09.0/cypher-antlr-ast-common-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-antlr-common/2025.09.0/cypher-antlr-common-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-preparser/2025.09.0/cypher-preparser-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-planner-spi/2025.09.0/neo4j-cypher-planner-spi-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-interpreted-runtime/2025.09.0/neo4j-cypher-interpreted-runtime-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-cypher-slotted-runtime/2025.09.0/neo4j-cypher-slotted-runtime-2025.09.0.jar:/Users/luigi/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.2.2/caffeine-3.2.2.jar:/Users/luigi/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/Users/luigi/.m2/repository/org/bitbucket/inkytonik/kiama/kiama_2.13/2.5.1/kiama_2.13-2.5.1.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-security/2025.09.0/neo4j-security-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-command-line/2025.09.0/neo4j-command-line-2025.09.0.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-core/2.0.5/shiro-core-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-cache/2.0.5/shiro-cache-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/crypto/shiro-hashes-argon2/2.0.5/shiro-hashes-argon2-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/crypto/shiro-hashes-bcrypt/2.0.5/shiro-hashes-bcrypt-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-crypto-cipher/2.0.5/shiro-crypto-cipher-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-config-core/2.0.5/shiro-config-core-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-event/2.0.5/shiro-event-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-crypto-core/2.0.5/shiro-crypto-core-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-crypto-hash/2.0.5/shiro-crypto-hash-2.0.5.jar:/Users/luigi/.m2/repository/org/apache/shiro/shiro-lang/2.0.5/shiro-lang-2.0.5.jar:/Users/luigi/.m2/repository/info/picocli/picocli/4.7.7/picocli-4.7.7.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-bolt/2025.09.0/neo4j-bolt-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/server-api/2025.09.0/server-api-2025.09.0.jar:/Users/luigi/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/Users/luigi/.m2/repository/io/netty/netty-codec-http/4.2.5.Final/netty-codec-http-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-transport/4.2.5.Final/netty-transport-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-codec-base/4.2.5.Final/netty-codec-base-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-codec-compression/4.2.5.Final/netty-codec-compression-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-classes-epoll/4.2.5.Final/netty-transport-classes-epoll-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.5.Final/netty-transport-native-unix-common-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-native-epoll/4.2.5.Final/netty-transport-native-epoll-4.2.5.Final-linux-x86_64.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-native-epoll/4.2.5.Final/netty-transport-native-epoll-4.2.5.Final-linux-aarch_64.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-classes-kqueue/4.2.5.Final/netty-transport-classes-kqueue-4.2.5.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-native-kqueue/4.2.5.Final/netty-transport-native-kqueue-4.2.5.Final-osx-x86_64.jar:/Users/luigi/.m2/repository/io/netty/netty-transport-native-kqueue/4.2.5.Final/netty-transport-native-kqueue-4.2.5.Final-osx-aarch_64.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-consistency-check/2025.09.0/neo4j-consistency-check-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-record-storage-engine/2025.09.0/neo4j-record-storage-engine-2025.09.0.jar:/Users/luigi/.m2/repository/commons-io/commons-io/2.20.0/commons-io-2.20.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-indexcommands/2025.09.0/neo4j-indexcommands-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-dbms/2025.09.0/neo4j-dbms-2025.09.0.jar:/Users/luigi/.m2/repository/org/jprocesses/jProcesses/1.6.5/jProcesses-1.6.5.jar:/Users/luigi/.m2/repository/com/profesorfalken/WMI4Java/1.6.3/WMI4Java-1.6.3.jar:/Users/luigi/.m2/repository/com/profesorfalken/jPowerShell/3.0/jPowerShell-3.0.jar:/Users/luigi/.m2/repository/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar:/Users/luigi/.m2/repository/org/apache/commons/commons-text/1.14.0/commons-text-1.14.0.jar:/Users/luigi/.m2/repository/org/apache/commons/commons-configuration2/2.12.0/commons-configuration2-2.12.0.jar:/Users/luigi/.m2/repository/org/neo4j/licensing-proxy/zstd-proxy/2025.09.0/zstd-proxy-2025.09.0.jar:/Users/luigi/.m2/repository/com/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-import-tool/2025.09.0/neo4j-import-tool-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-parser-ast-common/2025.09.0/cypher-parser-ast-common-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-parser-factory/2025.09.0/cypher-parser-factory-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v5-ast-factory/2025.09.0/cypher-v5-ast-factory-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v5-parser-listener/2025.09.0/cypher-v5-parser-listener-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-parser-common/2025.09.0/cypher-parser-common-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v25-ast-factory/2025.09.0/cypher-v25-ast-factory-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/cypher-v25-parser-listener/2025.09.0/cypher-v25-parser-listener-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/app/neo4j-server/2025.09.0/neo4j-server-2025.09.0.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-server/12.0.25/jetty-server-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-http/12.0.25/jetty-http-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-util/12.0.25/jetty-util-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-io/12.0.25/jetty-io-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/http2/jetty-http2-server/12.0.25/jetty-http2-server-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/http2/jetty-http2-common/12.0.25/jetty-http2-common-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/http2/jetty-http2-hpack/12.0.25/jetty-http2-hpack-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-alpn-server/12.0.25/jetty-alpn-server-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-alpn-java-server/12.0.25/jetty-alpn-java-server-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/ee8/jetty-ee8-webapp/12.0.25/jetty-ee8-webapp-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-ee/12.0.25/jetty-ee-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-xml/12.0.25/jetty-xml-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/ee8/jetty-ee8-servlet/12.0.25/jetty-ee8-servlet-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/ee8/jetty-ee8-nested/12.0.25/jetty-ee8-nested-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-security/12.0.25/jetty-security-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/jetty-session/12.0.25/jetty-session-12.0.25.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/toolchain/jetty-servlet-api/4.0.6/jetty-servlet-api-4.0.6.jar:/Users/luigi/.m2/repository/org/eclipse/jetty/ee8/jetty-ee8-security/12.0.25/jetty-ee8-security-12.0.25.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.43/jersey-hk2-2.43.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/core/jersey-common/2.43/jersey-common-2.43.jar:/Users/luigi/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/luigi/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/Users/luigi/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/Users/luigi/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/Users/luigi/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/Users/luigi/.m2/repository/org/javassist/javassist/3.30.2-GA/javassist-3.30.2-GA.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.43/jersey-container-servlet-2.43.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.43/jersey-container-servlet-core-2.43.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/core/jersey-server/2.43/jersey-server-2.43.jar:/Users/luigi/.m2/repository/org/glassfish/jersey/core/jersey-client/2.43/jersey-client-2.43.jar:/Users/luigi/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.19.2/jackson-jaxrs-json-provider-2.19.2.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.19.2/jackson-jaxrs-base-2.19.2.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.19.2/jackson-module-jaxb-annotations-2.19.2.jar:/Users/luigi/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/luigi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar:/Users/luigi/.m2/repository/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar:/Users/luigi/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar:/Users/luigi/.m2/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar:/Users/luigi/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar:/Users/luigi/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/luigi/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/luigi/.m2/repository/org/apache/arrow/flight-core/18.3.0/flight-core-18.3.0.jar:/Users/luigi/.m2/repository/org/apache/arrow/arrow-format/18.3.0/arrow-format-18.3.0.jar:/Users/luigi/.m2/repository/com/google/flatbuffers/flatbuffers-java/25.2.10/flatbuffers-java-25.2.10.jar:/Users/luigi/.m2/repository/org/apache/arrow/arrow-vector/18.3.0/arrow-vector-18.3.0.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/Users/luigi/.m2/repository/org/apache/arrow/arrow-memory-core/18.3.0/arrow-memory-core-18.3.0.jar:/Users/luigi/.m2/repository/org/apache/arrow/arrow-memory-netty/18.3.0/arrow-memory-netty-18.3.0.jar:/Users/luigi/.m2/repository/org/apache/arrow/arrow-memory-netty-buffer-patch/18.3.0/arrow-memory-netty-buffer-patch-18.3.0.jar:/Users/luigi/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/luigi/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/luigi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/luigi/.m2/repository/com/google/protobuf/protobuf-java/4.30.2/protobuf-java-4.30.2.jar:/Users/luigi/.m2/repository/com/google/protobuf/protobuf-java-util/4.30.2/protobuf-java-util-4.30.2.jar:/Users/luigi/.m2/repository/io/grpc/grpc-api/1.74.0/grpc-api-1.74.0.jar:/Users/luigi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/luigi/.m2/repository/io/grpc/grpc-context/1.74.0/grpc-context-1.74.0.jar:/Users/luigi/.m2/repository/io/grpc/grpc-core/1.74.0/grpc-core-1.74.0.jar:/Users/luigi/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/luigi/.m2/repository/io/perfmark/perfmark-api/0.27.0/perfmark-api-0.27.0.jar:/Users/luigi/.m2/repository/io/grpc/grpc-netty/1.74.0/grpc-netty-1.74.0.jar:/Users/luigi/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/luigi/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/luigi/.m2/repository/io/grpc/grpc-util/1.74.0/grpc-util-1.74.0.jar:/Users/luigi/.m2/repository/io/grpc/grpc-protobuf/1.74.0/grpc-protobuf-1.74.0.jar:/Users/luigi/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.51.0/proto-google-common-protos-2.51.0.jar:/Users/luigi/.m2/repository/io/grpc/grpc-protobuf-lite/1.74.0/grpc-protobuf-lite-1.74.0.jar:/Users/luigi/.m2/repository/io/grpc/grpc-stub/1.74.0/grpc-stub-1.74.0.jar:/Users/luigi/.m2/repository/io/netty/netty-codec-http2/4.2.5.Final/netty-codec-http2-4.2.5.Final.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-capabilities/2025.09.0/neo4j-capabilities-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-slf4j-provider/2025.09.0/neo4j-slf4j-provider-2025.09.0.jar:/Users/luigi/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-udc/2025.09.0/neo4j-udc-2025.09.0.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/luigi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/luigi/.m2/repository/org/neo4j/driver/neo4j-java-driver/6.0.0-beta01/neo4j-java-driver-6.0.0-beta01.jar:/Users/luigi/.m2/repository/org/neo4j/bolt/neo4j-bolt-connection/7.0.0/neo4j-bolt-connection-7.0.0.jar:/Users/luigi/.m2/repository/org/neo4j/bolt/neo4j-bolt-connection-netty/7.0.0/neo4j-bolt-connection-netty-7.0.0.jar:/Users/luigi/.m2/repository/io/netty/netty-tcnative-classes/2.0.72.Final/netty-tcnative-classes-2.0.72.Final.jar:/Users/luigi/.m2/repository/org/neo4j/bolt/neo4j-bolt-connection-pooled/7.0.0/neo4j-bolt-connection-pooled-7.0.0.jar:/Users/luigi/.m2/repository/org/neo4j/bolt/neo4j-bolt-connection-routed/7.0.0/neo4j-bolt-connection-routed-7.0.0.jar:/Users/luigi/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/luigi/.m2/repository/io/projectreactor/reactor-core/3.8.0-M6/reactor-core-3.8.0-M6.jar:/Users/luigi/.m2/repository/org/assertj/assertj-core/3.27.6/assertj-core-3.27.6.jar:/Users/luigi/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-procedure-api/2025.09.0/neo4j-procedure-api-2025.09.0.jar:/Users/luigi/.m2/repository/org/neo4j/neo4j-collections/2025.09.0/neo4j-collections-2025.09.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/luigi/Code/neo-udf-cidr-check/target/surefire/surefirebooter-20251112094317243_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/luigi/Code/neo-udf-cidr-check/target/surefire/surefirebooter-20251112110538137_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
     <property name="user.name" value="luigi"/>
@@ -38,7 +38,7 @@
     <property name="os.version" value="15.7.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="jnidispatch.path" value="/Users/luigi/Library/Caches/JNA/temp/jna2321431299932476912.tmp"/>
+    <property name="jnidispatch.path" value="/Users/luigi/Library/Caches/JNA/temp/jna12826705231861107573.tmp"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Corretto-21.0.6.7.1"/>
     <property name="localRepository" value="/Users/luigi/.m2/repository"/>
@@ -58,29 +58,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testEmptyIp" classname="NetworkUtils IP CIDR Check Tests" time="0.85">
+  <testcase name="testEmptyIp" classname="NetworkUtils IP CIDR Check Tests" time="0.705">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testEmptyIp(NetworkUtilsTest.java:122)
-]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:21 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1034461954 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:21 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1034461954
-]]></system-err>
-  </testcase>
-  <testcase name="testEmptyNetwork" classname="NetworkUtils IP CIDR Check Tests" time="0.286">
-    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-
-Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testEmptyNetwork(NetworkUtilsTest.java:135)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 0
+	at example.NetworkUtilsTest.testEmptyIp(NetworkUtilsTest.java:118)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty.
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testEmptyNetwork(NetworkUtilsTest.java:132)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -124,7 +112,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 0.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty..
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -169,23 +157,33 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:21 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 851339053 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:21 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 851339053
+    <system-err><![CDATA[Nov 12, 2025 11:05:41 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 861715645 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidIp(String, String)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.346">
+  <testcase name="testIPv6Address" classname="NetworkUtils IP CIDR Check Tests" time="0.255">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:89)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: invalid_ip: nodename nor servname provided, or not known
+	at example.NetworkUtilsTest.testIPv6Address(NetworkUtilsTest.java:187)
+]]></failure>
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1519489617 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1519489617
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyNetwork" classname="NetworkUtils IP CIDR Check Tests" time="0.039">
+    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at example.NetworkUtilsTest.testEmptyNetwork(NetworkUtilsTest.java:127)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty.
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:86)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -229,7 +227,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: invalid_ip: nodename nor servname provided, or not known.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty..
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -274,23 +272,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:22 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1840141666 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:22 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1840141666
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 960146579 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidIp(String, String)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.351">
+  <testcase name="testInvalidIp(String, String)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.036">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:89)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999: nodename nor servname provided, or not known
+	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:93)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: invalid_ip or 10.10.0.0/8
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:86)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -334,7 +330,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999: nodename nor servname provided, or not known.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: invalid_ip or 10.10.0.0/8.
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -379,23 +375,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:22 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 955557441 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:22 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 955557441
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 20334603 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidIp(String, String)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.377">
+  <testcase name="testInvalidIp(String, String)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.013">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:89)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.0.256: nodename nor servname provided, or not known
+	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:93)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999 or 10.10.0.0/8
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:86)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -439,7 +433,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.0.256: nodename nor servname provided, or not known.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999 or 10.10.0.0/8.
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -484,23 +478,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:22 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1867886327 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1867886327
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1844385433 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidIp(String, String)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.333">
+  <testcase name="testInvalidIp(String, String)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.01">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:89)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.-1.1: nodename nor servname provided, or not known
+	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:93)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.0.256 or 10.10.0.0/24
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:86)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -544,7 +536,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.-1.1: nodename nor servname provided, or not known.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.0.256 or 10.10.0.0/24.
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -589,23 +581,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1868936733 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1868936733
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 2080214930 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testNullNetwork" classname="NetworkUtils IP CIDR Check Tests" time="0.248">
+  <testcase name="testInvalidIp(String, String)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.01">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testNullNetwork(NetworkUtilsTest.java:161)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Cannot invoke "String.indexOf(int)" because "network" is null
+	at example.NetworkUtilsTest.testInvalidIp(NetworkUtilsTest.java:93)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.-1.1 or 10.10.0.0/24
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testNullNetwork(NetworkUtilsTest.java:158)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -649,7 +639,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Cannot invoke "String.indexOf(int)" because "network" is null.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.-1.1 or 10.10.0.0/24.
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -694,30 +684,131 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 53143696 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 53143696
+    <system-err><![CDATA[Nov 12, 2025 11:05:42 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 754376013 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testFunctionInCypherQuery" classname="NetworkUtils IP CIDR Check Tests" time="0.486">
-    <system-err><![CDATA[Nov 12, 2025 9:43:23 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1203558746 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1203558746
+  <testcase name="testNullNetwork" classname="NetworkUtils IP CIDR Check Tests" time="0.032">
+    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at example.NetworkUtilsTest.testNullNetwork(NetworkUtilsTest.java:145)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty.
+		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
+		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
+		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
+		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+			at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+			at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+			at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+			at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+			at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+			at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+			at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+			at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+			at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty..
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
+		at java.base/java.util.Optional.map(Optional.java:260)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+		at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+		at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+		at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+		at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+		at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+		at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+		at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+		at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+		at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1453734952 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidNetwork(String, String)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.222">
+  <testcase name="testFunctionInCypherQuery" classname="NetworkUtils IP CIDR Check Tests" time="0.5">
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 551545010 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 551545010
+]]></system-err>
+  </testcase>
+  <testcase name="testInvalidNetwork(String, String)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.013">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
 	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 15
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid network format.
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:106)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -761,7 +852,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 15.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid network format..
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -806,47 +897,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 897584618 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 897584618
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 128655527 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidNetwork(String, String)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.227">
+  <testcase name="testInvalidNetwork(String, String)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.012">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
 	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
-]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 2121437254 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 2121437254
-]]></system-err>
-  </testcase>
-  <testcase name="testInvalidNetwork(String, String)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.225">
-    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-
-Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
-]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1456752671 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:24 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1456752671
-]]></system-err>
-  </testcase>
-  <testcase name="testInvalidNetwork(String, String)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.225">
-    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-
-Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: For input string: "abc"
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length.
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:106)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -890,7 +955,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: For input string: "abc".
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length..
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -935,23 +1000,21 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 43297446 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 43297446
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 804105878 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidNetwork(String, String)[5]" classname="NetworkUtils IP CIDR Check Tests" time="0.232">
+  <testcase name="testInvalidNetwork(String, String)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.009">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
 	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
-	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length.
 		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
 		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
 		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
-		at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:106)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
 		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -995,7 +1058,7 @@ Expecting code to raise a throwable.
 			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 			at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 999.999.999.999.
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length..
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 		at java.base/java.util.Optional.map(Optional.java:260)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -1040,74 +1103,290 @@ Expecting code to raise a throwable.
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1248103221 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1248103221
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1576706800 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.245">
-    <system-err><![CDATA[Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 908134864 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 908134864
+  <testcase name="testInvalidNetwork(String, String)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.009">
+    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length in 10.10.0.0/abc
+		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
+		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
+		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
+		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+			at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+			at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+			at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+			at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+			at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+			at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+			at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+			at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+			at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid prefix length in 10.10.0.0/abc.
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
+		at java.base/java.util.Optional.map(Optional.java:260)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+		at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+		at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+		at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+		at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+		at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+		at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+		at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+		at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+		at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 845357243 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.23">
-    <system-err><![CDATA[Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1688684323 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1688684323
+  <testcase name="testInvalidNetwork(String, String)[5]" classname="NetworkUtils IP CIDR Check Tests" time="0.007">
+    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at example.NetworkUtilsTest.testInvalidNetwork(NetworkUtilsTest.java:109)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: 10.10.0.12 or 999.999.999.999/24
+		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
+		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
+		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
+		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+			at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+			at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+			at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+			at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+			at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+			at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+			at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+			at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+			at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: 10.10.0.12 or 999.999.999.999/24.
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
+		at java.base/java.util.Optional.map(Optional.java:260)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+		at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+		at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+		at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+		at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+		at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+		at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+		at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+		at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+		at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1594639790 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.22">
-    <system-err><![CDATA[Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1497863121 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:25 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1497863121
+  <testcase name="testHostnameInsteadOfIp" classname="NetworkUtils IP CIDR Check Tests" time="0.222">
+    <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at example.NetworkUtilsTest.testHostnameInsteadOfIp(NetworkUtilsTest.java:196)
+]]></failure>
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1584080449 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1584080449
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.23">
-    <system-err><![CDATA[Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1129859294 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1129859294
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[1]" classname="NetworkUtils IP CIDR Check Tests" time="0.24">
+    <system-err><![CDATA[Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1935824434 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:43 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1935824434
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[5]" classname="NetworkUtils IP CIDR Check Tests" time="0.247">
-    <system-err><![CDATA[Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 772629104 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 772629104
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[2]" classname="NetworkUtils IP CIDR Check Tests" time="0.243">
+    <system-err><![CDATA[Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 604726639 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 604726639
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[6]" classname="NetworkUtils IP CIDR Check Tests" time="0.231">
-    <system-err><![CDATA[Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1526448027 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1526448027
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[3]" classname="NetworkUtils IP CIDR Check Tests" time="0.227">
+    <system-err><![CDATA[Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 835921846 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 835921846
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[7]" classname="NetworkUtils IP CIDR Check Tests" time="0.213">
-    <system-err><![CDATA[Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 34804405 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:26 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 34804405
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[4]" classname="NetworkUtils IP CIDR Check Tests" time="0.225">
+    <system-err><![CDATA[Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 924835651 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 924835651
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[8]" classname="NetworkUtils IP CIDR Check Tests" time="0.222">
-    <system-err><![CDATA[Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 418082467 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 418082467
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[5]" classname="NetworkUtils IP CIDR Check Tests" time="0.253">
+    <system-err><![CDATA[Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 840427888 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:44 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 840427888
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[9]" classname="NetworkUtils IP CIDR Check Tests" time="0.228">
-    <error message="Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 13" type="org.neo4j.driver.exceptions.ClientException"><![CDATA[org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 13
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[6]" classname="NetworkUtils IP CIDR Check Tests" time="0.222">
+    <system-err><![CDATA[Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 309831329 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 309831329
+]]></system-err>
+  </testcase>
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[7]" classname="NetworkUtils IP CIDR Check Tests" time="0.224">
+    <system-err><![CDATA[Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 753396831 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 753396831
+]]></system-err>
+  </testcase>
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[8]" classname="NetworkUtils IP CIDR Check Tests" time="0.229">
+    <system-err><![CDATA[Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1558398597 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1558398597
+]]></system-err>
+  </testcase>
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[9]" classname="NetworkUtils IP CIDR Check Tests" time="0.231">
+    <error message="Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid network format." type="org.neo4j.driver.exceptions.ClientException"><![CDATA[org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: Invalid network format.
 	at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
 	at org.neo4j.driver.internal.InternalResult.blockingGet(InternalResult.java:116)
 	at org.neo4j.driver.internal.InternalResult.single(InternalResult.java:65)
-	at example.NetworkUtilsTest.testIpBelongsToNetwork(NetworkUtilsTest.java:67)
+	at example.NetworkUtilsTest.testIpBelongsToNetwork(NetworkUtilsTest.java:76)
 	Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
 		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
@@ -1151,7 +1430,7 @@ INFO: Closing driver instance 418082467
 		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Range [0, -1) out of bounds for length 13.
+Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: Invalid network format..
 	at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
 	at java.base/java.util.Optional.map(Optional.java:260)
 	at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
@@ -1196,64 +1475,155 @@ Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the f
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></error>
-    <system-err><![CDATA[Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1585853402 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1585853402
+    <system-err><![CDATA[Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1261216089 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1261216089
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[10]" classname="NetworkUtils IP CIDR Check Tests" time="0.23">
-    <system-err><![CDATA[Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1385926209 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1385926209
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[10]" classname="NetworkUtils IP CIDR Check Tests" time="0.221">
+    <system-err><![CDATA[Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1682096861 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:45 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1682096861
 ]]></system-err>
   </testcase>
   <testcase name="testIpBelongsToNetwork(String, String, boolean)[11]" classname="NetworkUtils IP CIDR Check Tests" time="0.222">
-    <system-err><![CDATA[Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 47086915 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:27 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 47086915
+    <system-err><![CDATA[Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 104849493 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 104849493
 ]]></system-err>
   </testcase>
   <testcase name="testIpBelongsToNetwork(String, String, boolean)[12]" classname="NetworkUtils IP CIDR Check Tests" time="0.227">
-    <system-err><![CDATA[Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 933711092 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 933711092
+    <system-err><![CDATA[Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 882141659 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 882141659
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[13]" classname="NetworkUtils IP CIDR Check Tests" time="0.228">
-    <system-err><![CDATA[Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1333404258 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1333404258
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[13]" classname="NetworkUtils IP CIDR Check Tests" time="0.226">
+    <system-err><![CDATA[Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1133126455 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 1133126455
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[14]" classname="NetworkUtils IP CIDR Check Tests" time="0.233">
-    <system-err><![CDATA[Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 2146593577 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 2146593577
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[14]" classname="NetworkUtils IP CIDR Check Tests" time="0.225">
+    <system-err><![CDATA[Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 50317758 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:46 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 50317758
 ]]></system-err>
   </testcase>
-  <testcase name="testIpBelongsToNetwork(String, String, boolean)[15]" classname="NetworkUtils IP CIDR Check Tests" time="0.239">
-    <system-err><![CDATA[Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 217257457 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 217257457
+  <testcase name="testIpBelongsToNetwork(String, String, boolean)[15]" classname="NetworkUtils IP CIDR Check Tests" time="0.247">
+    <system-err><![CDATA[Nov 12, 2025 11:05:47 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 878300377 created for server uri 'bolt://127.0.0.1:58441/'
+Nov 12, 2025 11:05:47 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Closing driver instance 878300377
 ]]></system-err>
   </testcase>
-  <testcase name="testNullIp" classname="NetworkUtils IP CIDR Check Tests" time="0.23">
+  <testcase name="testNullIp" classname="NetworkUtils IP CIDR Check Tests" time="0.043">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
-	at example.NetworkUtilsTest.testNullIp(NetworkUtilsTest.java:148)
+	at example.NetworkUtilsTest.testNullIp(NetworkUtilsTest.java:136)
+	Suppressed: org.neo4j.driver.exceptions.ClientException: Failed to invoke function `example.ipBelongsToNetwork`: Caused by: java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty.
+		at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:63)
+		at org.neo4j.driver.internal.InternalSession.lambda$close$3(InternalSession.java:90)
+		at org.neo4j.driver.internal.observation.util.ObservationUtil.observe(ObservationUtil.java:40)
+		at org.neo4j.driver.internal.InternalSession.close(InternalSession.java:88)
+		at example.NetworkUtilsTest.closeSession(NetworkUtilsTest.java:49)
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapToNeo4jException(ErrorMapper.java:224)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:141)
+			at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+			at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+			at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+			at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+			at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+			at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+			at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+			at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+			at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+			at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+			at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+			at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+			at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: org.neo4j.driver.exceptions.Neo4jException: 53U00: Execution of the function example.ipBelongsToNetwork() failed due to java.lang.RuntimeException: Invalid IP or network format: IP and network must not be null or empty..
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapGqlCause(ErrorMapper.java:179)
+		at java.base/java.util.Optional.map(Optional.java:260)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.mapBoltFailureException(ErrorMapper.java:122)
+		at org.neo4j.driver.internal.adaptedbolt.ErrorMapper.map(ErrorMapper.java:81)
+		at org.neo4j.driver.internal.adaptedbolt.AdaptingDriverResponseHandler.onError(AdaptingDriverResponseHandler.java:68)
+		at org.neo4j.bolt.connection.pooled.impl.PooledBoltConnection$PooledResponseHandler.onError(PooledBoltConnection.java:204)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.lambda$onError$1(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.runIgnoringError(BoltConnectionImpl.java:808)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$ResponseHandleImpl.onError(BoltConnectionImpl.java:676)
+		at org.neo4j.bolt.connection.netty.impl.BoltConnectionImpl$5.onError(BoltConnectionImpl.java:364)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v4.BoltProtocolV4$2.onError(BoltProtocolV4.java:205)
+		at org.neo4j.bolt.connection.netty.impl.handlers.PullResponseHandlerImpl.onFailure(PullResponseHandlerImpl.java:46)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:108)
+		at org.neo4j.bolt.connection.netty.impl.messaging.v57.MessageReaderV57.unpackFailureMessage(MessageReaderV57.java:46)
+		at org.neo4j.bolt.connection.netty.impl.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:34)
+		at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at org.neo4j.bolt.connection.netty.impl.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:40)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:167)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+		at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:587)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:562)
+		at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:503)
+		at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:475)
+		at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+		at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Driver instance 1453158516 created for server uri 'bolt://127.0.0.1:53498/'
-Nov 12, 2025 9:43:28 AM org.neo4j.driver.internal.logging.SystemLogger info
-INFO: Closing driver instance 1453158516
+    <system-err><![CDATA[Nov 12, 2025 11:05:47 AM org.neo4j.driver.internal.logging.SystemLogger info
+INFO: Driver instance 1743257203 created for server uri 'bolt://127.0.0.1:58441/'
 ]]></system-err>
   </testcase>
 </testsuite>

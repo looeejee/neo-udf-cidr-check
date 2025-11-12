@@ -92,8 +92,9 @@ public class NetworkUtilsTest {
     void testInvalidIp(String ip, String network) {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", ip, "network", network)))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", ip, "network", network)).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @ParameterizedTest(name = "Invalid network: {1}")
@@ -108,8 +109,9 @@ public class NetworkUtilsTest {
     void testInvalidNetwork(String ip, String network) {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", ip, "network", network)))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", ip, "network", network)).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -117,8 +119,9 @@ public class NetworkUtilsTest {
     void testEmptyIp() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", "", "network", "10.10.0.0/8")))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", "", "network", "10.10.0.0/8")).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -126,8 +129,9 @@ public class NetworkUtilsTest {
     void testEmptyNetwork() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", "10.10.0.12", "network", "")))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", "10.10.0.12", "network", "")).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -135,8 +139,9 @@ public class NetworkUtilsTest {
     void testNullIp() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", Values.NULL, "network", "10.10.0.0/8")))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", Values.NULL, "network", "10.10.0.0/8")).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -144,8 +149,9 @@ public class NetworkUtilsTest {
     void testNullNetwork() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", "10.10.0.12", "network", Values.NULL)))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", "10.10.0.12", "network", Values.NULL)).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -186,8 +192,9 @@ public class NetworkUtilsTest {
     void testIPv6Address() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", "2001:db8::1", "network", "2001:db8::/32")))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", "2001:db8::1", "network", "2001:db8::/32")).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 
     @Test
@@ -195,7 +202,8 @@ public class NetworkUtilsTest {
     void testHostnameInsteadOfIp() {
         assertThatThrownBy(() -> session.run(
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
-                Values.parameters("ip", "localhost", "network", "127.0.0.0/8")))
-                .hasMessageContaining("Invalid IP or network format");
+                Values.parameters("ip", "localhost", "network", "127.0.0.0/8")).single().get("result").asBoolean())
+            .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
+            .hasMessageContaining("Invalid IP or network format");
     }
 }

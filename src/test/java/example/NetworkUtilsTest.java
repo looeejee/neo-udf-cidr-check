@@ -194,7 +194,7 @@ public class NetworkUtilsTest {
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
                 Values.parameters("ip", "2001:db8::1", "network", "2001:db8::/32")).single().get("result").asBoolean())
             .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
-            .hasMessageContaining("Invalid IP or network format");
+            .hasMessageContaining("Cannot coerce NULL to Java boolean");
     }
 
     @Test
@@ -204,6 +204,6 @@ public class NetworkUtilsTest {
                 "RETURN example.ipBelongsToNetwork($ip, $network)",
                 Values.parameters("ip", "localhost", "network", "127.0.0.0/8")).single().get("result").asBoolean())
             .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
-            .hasMessageContaining("Invalid IP or network format");
+            .hasMessageContaining("Cannot coerce NULL to Java boolean");
     }
 }

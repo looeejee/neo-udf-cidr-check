@@ -18,6 +18,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: Configure Maven for Githu Packages
+        run: |
+          mkdir -p ~/.m2
+          echo '<settings><servers><server><id>github</id><username>${{ github.actor}}</username><password>${{secrets.GITHUB_TOKEN}}</password></server></servers></settings>' > ~/.m2/setting.xml
       - name: Publish package
         run: mvn --batch-mode deploy -X
         env:

@@ -94,10 +94,14 @@
       </plugins>
     </build>
     <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/looeejee/neo-udf-cidr-check</url>
-    </repository>
-  </distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/looeejee/neo-udf-cidr-check</url>
+      </repository>
+      <snapshotRepository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/looeejee/neo-udf-cidr-check</url>
+      </snapshotRepository>
+    </distributionManagement>
 </project>

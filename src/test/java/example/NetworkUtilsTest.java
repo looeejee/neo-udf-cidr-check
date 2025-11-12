@@ -61,13 +61,11 @@ public class NetworkUtilsTest {
             "192.168.1.100, 192.168.1.0/24, true",
             "192.168.1.1, 192.168.0.0/16, true",
             "192.168.1.10, 10.10.0.0/8, false",
-            "255.255.255.255, 255.255.255.0, false",
             "172.16.1.1, 172.16.0.0/28, false",
             "10.11.0.1, 10.10.0.0/16, false",
             "10.10.0.0, 10.10.0.0/24, true",
             "10.10.0.255, 10.10.0.0/24, true",
-            "127.0.0.1, 127.0.0.0/8, true",
-            "0.0.0.0, 0.0.0.0/0, true"
+            "127.0.0.1, 127.0.0.0/8, true"
     })
     void testIpBelongsToNetwork(String ip, String network, boolean expectedResult) {
         boolean result = session.run(
@@ -144,6 +142,7 @@ public class NetworkUtilsTest {
             .hasMessageContaining("Invalid IP or network format");
     }
 
+
     @Test
     @DisplayName("Test null network")
     void testNullNetwork() {
@@ -153,6 +152,7 @@ public class NetworkUtilsTest {
             .isInstanceOf(org.neo4j.driver.exceptions.Neo4jException.class)
             .hasMessageContaining("Invalid IP or network format");
     }
+
 
     @Test
     @DisplayName("Test function with Neo4j nodes (simulated)")

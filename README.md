@@ -1,3 +1,5 @@
+[![Java CI with Maven](https://github.com/looeejee/neo-udf-cidr-check/actions/workflows/maven.yml/badge.svg)](https://github.com/looeejee/neo-udf-cidr-check/actions/workflows/maven.yml)
+
 # User Defined Function for Neo4j: IP Address Network Verification
 
 This project is designed to extend Neo4j's capabilities by implementing a User Defined Function (UDF) that checks if an IP address belongs to a specified network segment. It's an excellent resource for developers looking to integrate network validation within their Neo4j graph databases.

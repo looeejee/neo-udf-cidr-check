@@ -60,6 +60,9 @@ jobs:
         with:
           name: my-jar
 
+      - name: Move JAR to Target Directory
+        run: mv neo-udf-cidr-check-1.0.0.jar target/neo-udf-cidr-check-1.0.0.jar
+
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
       - name: Install cosign

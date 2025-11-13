@@ -62,13 +62,19 @@ https://github.com/neo4j-graph-examples/network-management
 
 For the scope of this Project a docker image was created to import the dataset and configure the UDF that will be used to filter Nodes based on the value of IP node property.
 
-To build and run this image locally execute the docker commands:
+To build and run this image locally, checkout this repository and build the `.jar` file by running 
+
+```mvn clean install``` 
+
+then execute the docker commands:
 
 ```
-docker buildx build -t neo-udf-ip-check:1.0
+docker build -t neo-udf-ip-check:1.0 .
 
-docker run -it -p 7474:7474 -p 7687:7687 --env=NEO4J_ACCEPT_LICENSE_AGREEMENT=yes --env=NEO4J_AUTH=neo4j/<PASSWORD> neo-udf-ip-check:1.0
+docker run -it -p 7474:7474 -p 7687:7687 --env=NEO4J_AUTH=neo4j/<PASSWORD> neo-udf-ip-check:1.0
 ```
+
+>**NOTE**: if building using a neo4j-enterprise docker image, it is necessary to add the variable `--env=NEO4J_ACCEPT_LICENSE_AGREEMENT=yes`
 
 Once the Container is Up and running, connect to it by opening a web browser and access Neo4j Browser via the URL `https://localhost:7474`
 

@@ -2,7 +2,11 @@
 
 # User Defined Function for Neo4j: IP Address Network Verification
 
-This project is designed to extend Neo4j's capabilities by implementing a User Defined Function (UDF) that checks if an IP address belongs to a specified network segment. It's an excellent resource for developers looking to integrate network validation within their Neo4j graph databases.
+This project is designed to explore how it is possible to extend Neo4j's capabilities by implementing a User Defined Function (UDF) that checks if an IP address belongs to a specified network segment. It's meant as an example for developers looking to integrate network validation within their Neo4j graph databases.
+
+For more information on Neo4j User Defined Functions, visit the official documentation page:
+
+https://neo4j.com/docs/cypher-manual/current/functions/user-defined/
 
 ## Project Overview
 
@@ -104,4 +108,3 @@ OUTPUT
 ![Filtered Nodes](img/filter_nodes.png)
 
 ![Filtered Nodes - Table](img/filter_nodes_table.png)
-

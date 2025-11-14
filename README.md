@@ -163,11 +163,13 @@ We can ask the LLM to retrieve all nodes that belong to the network `10.1.10.0/2
 
 ![Third Prompt](img/third_prompt.png)
 
-# FINAL RESULT AND NETWORK ANALYSIS RETURNED BY THE LLM
+# Final Result And Detailed Network Analysis as Returned by the LLM
+
+![Result](img/result.png)
 
 ## Network Analysis Report: 10.1.10.0/24
 
-## Executive Summary
+### Executive Summary
 
 The 10.1.10.0/24 network segment contains **201 active interfaces** across **200 machines**, exposing **650 unique ports** running **121 service instances**. This segment appears to be a data center rack (DC1-RCK-1-10) with a mixed infrastructure of database servers and web services, all connected through a central switch at 10.1.10.254.
 

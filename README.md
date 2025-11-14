@@ -161,7 +161,7 @@ We can ask the LLM to retrieve all nodes that belong to the network `10.1.10.0/2
 
 ![Second Prompt](img/second_prompt.png)
 
-![Third Prompt](img/third_prompt.png)
+![Third Prompt](img/third_prompt_edited.png)
 
 # Final Result And Detailed Network Analysis as Returned by the LLM
 

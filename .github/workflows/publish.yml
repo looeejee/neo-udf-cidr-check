@@ -25,11 +25,8 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Configure Maven for Githu Packages
-        run: |
-          mkdir -p ~/.m2
-          echo '<settings><servers><server><id>github</id><username>${{ github.actor}}</username><password>${{secrets.GITHUB_TOKEN}}</password></server></servers></settings>' > ~/.m2/setting.xml
-
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
        # Upload the JAR as an artifact
       - name: Upload JAR Artifact
         uses: actions/upload-artifact@v5.0.0 # or latest version

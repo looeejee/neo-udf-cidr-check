@@ -113,7 +113,9 @@ OUTPUT
 
 We can take this Project one step further by integrating the UDF function that we have defined and use it with Neo4j MCP Server to be able to perform a detailed network analysis with the help of a LLM.
 
-For this test I have used Claude Desktop and the `mcp-neo4j-cypher` MCP Server.
+For this test I have used Claude Desktop and the `neo4j-mcp` MCP Server. For more information, visit the pages:
+
+https://github.com/neo4j/mcp
 
 Make sure that the container that includes the UDF and the demonstrative network data is running via
 
@@ -121,29 +123,28 @@ Make sure that the container that includes the UDF and the demonstrative network
 docker run -it -p 7474:7474 -p 7687:7687 --env=NEO4J_ACCEPT_LICENSE_AGREEMENT=yes --env=NEO4J_AUTH=neo4j/<PASSWORD> <image-name>:<tag>
 ```
 
-- Step 1: Configure Claude Desktop to use the `mcp-neo4j-cypher` to access the tools exposed by the MCP Server to run Cypher queries on the network graph stored in my Neo4j Server
+- Step 1: Configure Claude Desktop to use the `neo4j-mcp` server to access the tools exposed by the MCP Server to run Cypher queries on the network graph stored in my Neo4j Server
 
 Update the `claude_desktop_config.json` file to include the configuration for the MCP server:
 
 ```
 {
   "mcpServers": {
-    "neo4j": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "--network=host",
-        "-p", 
-        "8000:8000",
-        "-e", "NEO4J_URI=bolt://127.0.0.1:7687",
-        "-e", "NEO4J_USERNAME=neo4j",
-        "-e", "NEO4J_PASSWORD=<PASSWORD>",
-        "-e", "NEO4J_NAMESPACE=neo4j",
-        "-e", "NEO4J_TRANSPORT=stdio",
-        "mcp/neo4j-cypher:latest"
-      ]
+    "neo4j-mcp": {
+      "type": "stdio",
+      "command": "neo4j-mcp",
+      "args": [],
+      "env": {
+        "NEO4J_URI": "bolt://localhost:7687",
+        "NEO4J_USERNAME": "neo4j",
+        "NEO4J_PASSWORD": "password",
+        "NEO4J_DATABASE": "neo4j",
+        "NEO4J_READ_ONLY": "true",
+        "NEO4J_TELEMETRY": "false",
+        "NEO4J_LOG_LEVEL": "info",
+        "NEO4J_LOG_FORMAT": "text",
+        "NEO4J_SCHEMA_SAMPLE_SIZE": "100"
+      }
     }
   }
 }
@@ -367,3 +368,22 @@ Network (Zone 1: 10.1.0.0/8)
 ---
 
 *Report generated from Neo4j graph database analysis of network segment 10.1.10.0/24*
+
+
+## Does it really brings any benefits to use this UDF?
+
+I have asked the LLM to run some tests on the graph database used in this project to verify whether the UDF introduces any tangible benefit to perform the desired newtork analysis. 
+The ouput from the test returned by the LLM is available in the file `udf_comparison.md`
+
+One important note, which I belive is relevant to mention is that the following related to performance consideraions:
+
+```
+String Prefix Performance
+
+Query Time: Fast (sub-second)
+Scan Type: Full table scan OR index scan if string index exists
+Scalability: O(n) with potential index optimization
+Index Usage: Can benefit from string prefix indexes
+```
+
+This is particularly important to consider, as performance will scale with O(n) = n, where n is the number of interfaces. Thus, the UDF  performance may be affected in very large graphs.

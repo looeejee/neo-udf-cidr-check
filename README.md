@@ -373,7 +373,7 @@ Network (Zone 1: 10.1.0.0/8)
 ## Does it really brings any benefits to use this UDF?
 
 I have asked the LLM to run some tests on the graph database used in this project to verify whether the UDF introduces any tangible benefit to perform the desired newtork analysis. 
-The ouput from the test returned by the LLM is available in the file `udf_comparison.md`
+The ouput from the test returned by the LLM is available in the files `udf_comparison.md` and `udf_comparison_report.md`
 
 One important note, which I belive is relevant to mention is that the following related to performance consideraions:
 
